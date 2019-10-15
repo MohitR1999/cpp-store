@@ -6,3 +6,7 @@ Some of the C++ codes, containing:
 4. Dynamic Programming
     * -Tabluation Method
     * -Memoization Method
+5. Searching Algorithms
+6. Greedy Approach
+7. Backtracking Algorithms
+8. Divide and Conquer Approach
