@@ -11,7 +11,7 @@ Some of the C++ codes, containing:
 7. Backtracking Algorithms
 8. Divide and Conquer Approach
 
-#Important points to be considered before making a Pull Request:
+# Important points to be considered before making a Pull Request:
 1. Read the existing codes CAREFULLY. Do not submit any code that is already existing in the repository, else that PR will be marked as spam
 2. You are free to submit your codes in any language you want, just make a folder for that specific language
 3. Provide proper CODE files, not TXT files or files without any extension, to maintain code portability.
