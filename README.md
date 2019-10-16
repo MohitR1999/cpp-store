@@ -18,3 +18,5 @@ Some of the C++ codes, containing:
 4. Try to keep your codes genuine (Not a hard-and-fast rule tbh :stuck_out_tongue_closed_eyes: )
 
 Lastly, do not submit useless PRs. That would be marked as spam straightforwadly
+# And most importantly
+Do a git pull before contributing any code, to prevent merge conflicts. Any PR that will cause merge conflicts won't be accepted
