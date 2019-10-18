@@ -23,3 +23,42 @@ Some of the C++ codes, containing:
 Lastly, do not submit useless PRs. That would be marked as spam straightforwadly
 # And most importantly
 Do a git pull before contributing any code, to prevent merge conflicts. Any PR that will cause merge conflicts won't be accepted
+
+
+// Inserion sort
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+	int i,j,n,num,hole;
+	
+	cin>>n;
+	int a[n];
+	for(i=0;i<n;i++)
+	{
+		cin>>a[i];
+	}
+	for(i=1;i<n;i++)
+	{
+		hole=i;
+		j=i-1;
+		num=a[i];
+		while(j>=0)
+		{
+			if(num<a[j])
+			{
+				a[j+1]=a[j];
+				hole=hole-1;
+				
+			}
+			j=j-1;
+		}
+		a[hole]=num;
+		
+	}
+	for(i=0;i<n;i++)
+	{
+		cout<<a[i]<<" ";
+	}
+}
