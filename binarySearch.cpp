@@ -24,6 +24,7 @@ int binarySearch(int arr[], int n, int val)
 int main()
 {
 	int n;
+	cout<<"Enter the number of elements in the array"<<endl;
 	cin>>n;
 	int* arr = new int[n] ;
 	
@@ -33,12 +34,15 @@ int main()
     	sort(arr, arr+n);
 
 	int val;
-	cout<<"enter value to be searched in the array"<<endl;
+	cout<<"Enter the value to be searched in the array"<<endl;
 	cin>>val;
 	
 	int res  = binarySearch(arr,n,val);
 	
-	cout << "element is" << ( res == -1 ? " not " : " " ) << "present in the array" << endl ;
+	if(res==-1)
+		cout<<"Element does not exist in the array"<<endl;
+	else
+		cout<<"Element "<<val<<" found at index "<<res<<" in the array"<<endl;
 	
-	delete arr ;
+	delete arr;
 }
