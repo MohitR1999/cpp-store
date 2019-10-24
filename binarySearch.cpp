@@ -40,5 +40,5 @@ int main()
 	if(res== -1)	
            cout<<"element is not present in the array"<<endl;
 	else	
-           cout<<"element is present in array"<<endl;
+           cout<<"element is present in array at position"<<res<<endl;
 }
