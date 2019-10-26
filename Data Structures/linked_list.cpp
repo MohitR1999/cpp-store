@@ -5,6 +5,8 @@
 #include<algorithm>
 using namespace std;
 
+int size=0;
+
 typedef char data_t;
 struct Node                             //creation of linked list
 {
@@ -27,6 +29,7 @@ void insertfront(data_t ele)        //insert at front side  of linked list
 
     pNewNode->link=pstart;
     pstart=pNewNode;
+    size++;
 
     //pNewNode->data=ele;
     //pNewNode->link=nullptr;
@@ -50,6 +53,30 @@ void insertrear(data_t ele)            //insert at rear side  of linked list
      pTemp->link=pNewNode;
     }
 
+    size++;
+}
+
+void Insert_at_index(data_t ele,int idx)
+{
+    Node *pNewNode = new Node(ele) ;
+    
+    if(idx < 1 || idx > size+1 )
+    {
+        cout<< " Invalid Position " << endl ;
+        return 0;
+    }
+    else
+    {
+        Node *pTemp = pstart ;
+        for(int i=0; i<idx-1 ; i++)
+        {
+            pTemp = pTemp->link ;
+        }
+        
+        pNewNode->link = pTemp->link ;
+        pTemp->link = pNewNode ;
+        size++;
+    }
 
 }
 void deleteFront()           //Delete at front side  of linked list
@@ -59,6 +86,7 @@ void deleteFront()           //Delete at front side  of linked list
        Node *temp=pstart;
        pstart=pstart->link;
        delete(temp);
+       size--;
     }
     else{
         cout<<"list is empty\n";
@@ -85,6 +113,7 @@ void deleteRear()           //Delete at rear side  of linked list
         }
         delete(temp->link);
         temp->link=nullptr;
+        size--;
     }
 }
 void display()                //Traverse the linked list
