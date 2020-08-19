@@ -1,18 +1,20 @@
-# Sample C++ codes :computer:
-Some of the C++ codes, containing:
+#C++ Store
+A repository that holds all the prominent data structures and algorithms related problems 
+# Contents:
+The repo contains the following codes (More to be added later on)
 1. Sparse Table Algorithms
 2. String Algorithms
 3. Sorting Algorithms
 4. Dynamic Programming
-    * -Tabluation Method
-    * -Memoization Method
+    * Tabluation Method
+    * Memoization Method
 5. Searching Algorithms
 6. Greedy Approach
 7. Backtracking Algorithms
 8. Divide and Conquer Approach
 9. Data Structures
-	* -Stack
-	* -Queue
+	* Stack
+	* Queue
 
 # Important points to be considered before making a Pull Request:
 1. Read the existing codes CAREFULLY. Do not submit any code that is already existing in the repository, else that PR will be marked as spam
