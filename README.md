@@ -1,4 +1,4 @@
-#C++ Store
+# C++ Store
 A repository that holds all the prominent data structures and algorithms related problems 
 # Contents:
 The repo contains the following codes (More to be added later on)
