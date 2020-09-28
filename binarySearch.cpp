@@ -18,7 +18,7 @@ int binarySearch(int arr[], int n, int val)
             e = mid-1;		// get rid of the right half : new end position = before the previous middle
     }
 
-    return -1;
+    return 0;
 }
 
 int main()
