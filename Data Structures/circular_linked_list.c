@@ -116,7 +116,7 @@ int main()
 				printf("Error in input.\n");
 				break;		
 		}
-			printf("------------------------------------------------------------\n");
+			printf("----\n");
 	}
 	getch();
 	return 0;
