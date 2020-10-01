@@ -12,7 +12,8 @@ int loc[NMAX],n,k;
 using namespace std;
 
 
-bool check(int m){
+bool check(int m)
+{
     int cnt=1,st=loc[0];
     for(int i=1; i<n;i++){
         if(loc[i]-st>=m){
@@ -30,7 +31,8 @@ int main() {
     cin>>t;
     while(t--){
         cin>>n>>k;
-        for(int i=0; i<n;i++) cin>>loc[i];
+        for(int i=0; i<n;i++) 
+			cin>>loc[i];
         sort(loc,loc+n);
         int lo=INT_MAX,hi=loc[n-1]-loc[0],mid;
         for(int i=1; i<n;i++) lo=min(lo,loc[i]-loc[i-1]);
