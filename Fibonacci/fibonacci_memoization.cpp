@@ -1,8 +1,7 @@
-#include <bits/stdc++.h>
-#define long long ll 
-using namespace std;
+#include<iostream.h>
+#include<conio.h>
 
-ll fibm(ll n,vector<ll> qb){
+fibo(ll n,vector<ll> qb){
     
     if( n < 2 )
     	return n; 
@@ -12,14 +11,17 @@ ll fibm(ll n,vector<ll> qb){
   
     else
     {
-      qb[n]=fibm(n-1,qb) +fibm(n-2,qb);
+      qb[n]=fibo(n-1,qb) +fibo(n-2,qb);
       return qb[n];
     }
 }
 
 
-void main(){
+void main()
+{
+clrscr();
     int n=10;
-    ll  res = fibm(n,vector<ll> (n+1,0));
+    ll  res = fibo(n,vector<ll> (n+1,0));
     cout<<res<<" " << endl;
+getch();
 }
