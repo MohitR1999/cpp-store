@@ -15,6 +15,7 @@ The repo contains the following codes (More to be added later on)
 9. Data Structures
 	* Stack
 	* Queue
+10. Recursion
 
 # Important points to be considered before making a Pull Request:
 1. Read the existing codes CAREFULLY. Do not submit any code that is already existing in the repository, else that PR will be marked as spam
